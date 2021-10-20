@@ -2,9 +2,266 @@
     <head>
         <meta charset="utf-8" />
         <title>Tracks</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="js/mediaPlayer/mediaelement-and-player.min.js"></script>
+
     </head>
 
     <body>
+        <div class="header">
+            <div class="headContent">
+                <a href="index.html" id="logo">luiggibeats</a>
+                <div class="opClass">
+                    <a class="options" href= "tracks.html">Tracks</a>
+                    <a class="options" href= "">Contato</a>
+                    <a class="options" href= "">Sobre</a>
+                    <a class="headIcon" href= ""><i class="fas fa-shopping-cart fa-lg">  $</i><span> 00,00</span></a>
+                    <a class="headIcon" href=""><i class="far fa-user fa-lg"></i> Login</a>
+                </div>
+            </div>
+            
+        </div>
 
+        <div class="container">
+            <div class="tracks">
+                <h1>Tracks</h1>
+                <div class="tracksContent">
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/gameboy.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Again</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/again.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">C minor</span>
+                                <span id="bpm">130</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/aura.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Aura</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/aura.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">A# major</span>
+                                <span id="bpm">85</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/tooMuch.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Too Much</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/too_much.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">D# minor</span>
+                                <span id="bpm">170</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/kyushu.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Kyushu</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/kyushu.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">F# minor</span>
+                                <span id="bpm">120</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/sweetDreams.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Sweet Dreams</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/sweet_dreams.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">D major</span>
+                                <span id="bpm">125</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/lacoste.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Lacoste</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/lacoste.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">F insen</span>
+                                <span id="bpm">105</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/cobain.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Cobain</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/cobain.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">D major</span>
+                                <span id="bpm">118</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/unfaithful.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Unfaithful</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/unfaithful.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">F# minor</span>
+                                <span id="bpm">120</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/gone.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Gone</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/gone.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">G major</span>
+                                <span id="bpm">130</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="track1">
+                        <img class="coverT" src="assets/images/memories.png" width="70" height="70" style="display: block; border-radius: 4px;" />
+                        <div class="tContent">
+                            <a href="" id="tTitle">Memories</a>
+                            
+                            
+                            
+                            <audio class="player2" src="assets/audio/memories.wav" type="audio/wav" controls="controls"></audio>
+
+                        </div>
+                        <div class="tContentRight">
+                            <div class="sBPM">
+                                <span id="scale">F major</span>
+                                <span id="bpm">125</span>
+                            </div>
+                            <div class="buyTrack">
+                                <a href="" id="trackBuyButton"><i class="far fa-credit-card"> $</i>17,00</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <span id="footLogo">luiggibeats</span>
+            <span id="copyr">© 2021 luiggibeats. Todos os direitos reservados.</span>
+        </div>
+
+        <script>
+            
+            $(document).ready(function() {
+                $('.player2').mediaelementplayer({
+                    alwaysShowControls: true,
+                    features: ['playpause','volume','progress'],
+                    audioVolume: 'horizontal',
+                    audioWidth: 400,
+                    audioHeight: 120
+                });
+                
+            });
+         
+        </script>
     </body>
 </html>
