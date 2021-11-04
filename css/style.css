@@ -962,3 +962,93 @@ body{
 }
 
 
+/*login*/
+
+.container2{
+    padding-top: 80px;
+}
+
+.loginDiv{
+    width: 350px;
+    height: 480px;
+    background-color: rgb(202, 168, 126);
+    margin: auto;
+    border-radius: 4px;
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.loginDiv h1{
+    display: inline-block;
+    margin-left: 68px;
+    margin-top: 50px;
+}
+
+.loginContent{
+    margin-left: 30px;
+    margin-top: 43px;
+}
+
+.userPass{
+    display: inline-block;
+    margin-bottom: 4px;
+    font-weight: bold;
+
+}
+
+.loginContent input[type="text"] {
+    width: 288px;
+    height: 37px;
+    outline: none;
+    background-color: rgb(235, 221, 203);
+    border: 2px solid rgb(187, 152, 106);
+}
+
+#pass{
+    margin-top: 20px;
+    
+}
+
+#entrar{
+    width: 170px;
+    height: 42px;
+    background-color: black;
+    color: rgb(214, 214, 214);
+    border: 2px solid rgb(187, 152, 106,0);
+    border-radius: 6px;
+    margin-top: 40px;
+    margin-left: 55px;
+    transition: .3s;
+
+}
+
+#entrar:hover{
+    background-color: rgb(83, 83, 83);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.signDiv{
+    margin-left: 138px;
+    margin-top: 45px;
+    font-size: 15px;
+}
+
+#inscrevaSe{
+    display: block;
+    color:black;
+    text-decoration: none;
+    margin-left: 37px;
+    margin-top: 5px;
+    transition: .3s;
+}
+
+#inscrevaSe:hover{
+    color: white;
+}
+
+.container2{
+    background-color: rgb(235, 224, 213);
+}
+
+
