@@ -964,11 +964,12 @@ body{
 
 .container2{
     padding-top: 80px;
+    padding-bottom: 80px;
 }
 
 .loginDiv{
     width: 350px;
-    height: 480px;
+    min-height: 480px;
     background-color: rgb(202, 168, 126);
     margin: auto;
     border-radius: 4px;
@@ -995,6 +996,14 @@ body{
 }
 
 .loginContent input[type="text"] {
+    width: 288px;
+    height: 37px;
+    outline: none;
+    background-color: rgb(235, 221, 203);
+    border: 2px solid rgb(187, 152, 106);
+}
+
+.loginContent input[type="password"] {
     width: 288px;
     height: 37px;
     outline: none;
@@ -1043,6 +1052,20 @@ body{
 
 #inscrevaSe:hover{
     color: white;
+}
+
+#error{
+    margin-bottom: 20px;
+    margin-left: 47px;
+    text-align: center;
+    border: 2px solid rgb(187, 152, 106);
+    color: rgb(192, 45, 45);
+    border-radius: 3px;
+    width: 200;
+    height: 15px;
+    background-color:rgba( 0, 0, 0, 0.2 );
+    transition: all 0.5s;
+    display: none;
 }
 
 .container2{
