@@ -24,15 +24,15 @@ function generateTracks(){
         var content = "";
         if (tracks[i][6] == false){
             content += "<div class='track1'>";
-            content += "<img class='coverT' src='assets/images/" + tracks[i][0] + "' width='70' height='70' style='display: block; border-radius: 4px;' />";
+            content += "<img class='coverT' src='assets/images/" + tracks[i][1] + "' width='70' height='70' style='display: block; border-radius: 4px;' />";
             content += '<div class="tContent">';
-            content += '<a href="" id="tTitle">' + tracks[i][1] + '</a>';
-            content += '<audio class="player2" src="assets/audio/' + tracks[i][2] + '" type="audio/wav" controls="controls"></audio>';
+            content += '<a href="" id="tTitle">' + tracks[i][2] + '</a>';
+            content += '<audio class="player2" src="assets/audio/' + tracks[i][3] + '" type="audio/wav" controls="controls"></audio>';
             content += '</div>';
             content += '<div class="tContentRight">';
             content += '<div class="sBPM">';
-            content += '<span id="scale">' + tracks[i][3] + '</span>';
-            content += '<span id="bpm">' + tracks[i][4] + '</span>';
+            content += '<span id="scale">' + tracks[i][4] + '</span>';
+            content += '<span id="bpm">' + tracks[i][5] + '</span>';
             content += '</div>';       
             content += '<div class="buyTrack">';
             content += '<a id="trackBuyButton" onclick="comprar(' + tracks[i][0] + ')"><i class="far fa-credit-card"> $</i>17,00</a>';
@@ -42,15 +42,15 @@ function generateTracks(){
         }
         else {
             content += "<div class='track1'>";
-            content += "<img class='coverT' src='assets/images/" + tracks[i][0] + "' width='70' height='70' style='display: block; border-radius: 4px;' />";
+            content += "<img class='coverT' src='assets/images/" + tracks[i][1] + "' width='70' height='70' style='display: block; border-radius: 4px;' />";
             content += '<div class="tContent">';
-            content += '<a href="" id="tTitle">' + tracks[i][1] + '</a>';
-            content += '<audio class="player2" src="assets/audio/' + tracks[i][2] + '" type="audio/wav" controls="controls"></audio>';
+            content += '<a href="" id="tTitle">' + tracks[i][2] + '</a>';
+            content += '<audio class="player2" src="assets/audio/' + tracks[i][3] + '" type="audio/wav" controls="controls"></audio>';
             content += '</div>';
             content += '<div class="tContentRight">';
             content += '<div class="sBPM">';
-            content += '<span id="scale">' + tracks[i][3] + '</span>';
-            content += '<span id="bpm">' + tracks[i][4] + '</span>';
+            content += '<span id="scale">' + tracks[i][4] + '</span>';
+            content += '<span id="bpm">' + tracks[i][5] + '</span>';
             content += '</div>';       
             content += '<div class="buyTrack">';
             content += '<a id="trackBuyButton">Comprado</a>';
@@ -72,6 +72,15 @@ function comprar(id){
 
     window.localStorage.setItem("cart", JSON.stringify(cart))
 
+
     generateTracks();
+
+    $('.player2').mediaelementplayer({
+        alwaysShowControls: true,
+        features: ['playpause','volume','progress'],
+        audioVolume: 'horizontal',
+        audioWidth: 400,
+        audioHeight: 120
+    });
 }
 

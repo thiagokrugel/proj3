@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
         <script src="js/mediaPlayer/mediaelement-and-player.min.js"></script>
-
+        <script src="js/genCart.js"></script>
     </head>
 
     <body>
@@ -19,12 +19,19 @@
                 <div class="opClass">
                     <a class="options" href= "tracks.html">Tracks</a>        
                     <a class="options" href= "contato.html">Contato</a>
-                    <a class="options" href= "sobre.html">Sobre</a>
-                    <a class="headIcon" href= ""><i class="fas fa-shopping-cart fa-lg">  $</i><span> 00,00</span></a>
+                    
+                    <div class="cart">
+                        <a class="headIcon"  onclick="showL()"><i class="fas fa-shopping-cart fa-lg">  $</i><span> 00,00</span></a>
+
+                        <div id="dpCnt" class="dropdown-content">
+                            <span id="meuCarrinho">Meu Carrinho</span>
+                            
+                        </div>
+                    </div>
                     <a class="headIcon" href="login.html"><i class="far fa-user fa-lg"></i> Login</a>
+                    
                 </div>
             </div>
-            
         </div>
         <div class="container">
             <div class="mainTop">
@@ -36,7 +43,7 @@
                             <a href="" id="hlTitle">Again</a>
                             
                             <div class="buyHlDiv">
-                                <a href="" id="hlBuy"><i class="far fa-credit-card"> $</i>17,00</a>
+                                <a href="tracks.html" id="hlBuy"><i class="far fa-credit-card"> $</i>17,00</a>
                             </div>
                         </div>
                     </div>
@@ -58,7 +65,7 @@
                     <div class="further2">
                         <h1>Beats por Encomenda</h1>
                         <span id="mixInf" style="white-space: pre-wrap;">Transformamos suas ideias musicais em realidade através dos nossos beats sob medida.</span>
-                        <a href="" id="orderLink">Encomende seus beats!</a>
+                        <a href="contato.html" id="orderLink">Encomende seus beats!</a>
                     </div>
                 </div>
             </div>

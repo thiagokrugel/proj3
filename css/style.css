@@ -41,6 +41,7 @@ body{
 .options:hover{
     border-bottom: 2px solid;
     color:  rgb(182, 172, 150);
+    
 }
 
 .headContent{
@@ -60,7 +61,8 @@ body{
 }
 
 .headIcon:hover{
-    color:  rgb(230, 212, 175);
+    color:  rgb(117, 108, 90);
+    cursor: pointer;
 }
 
 .mainTop{
@@ -392,7 +394,7 @@ body{
 
 .opClass{
     display: inline-block;
-    margin-left: 450px;
+    margin-left: 39%;
 }
 
 .options{
@@ -407,7 +409,7 @@ body{
 
 .options:hover{
     border-bottom: 2px solid;
-    color:  rgb(182, 172, 150);
+    color:  rgb(209, 193, 160);
 }
 
 .headContent{
@@ -427,7 +429,7 @@ body{
 }
 
 .headIcon:hover{
-    color:  rgb(230, 212, 175);
+    color:  rgb(209, 193, 160);
 }
 
 .mainTop{
@@ -451,7 +453,7 @@ body{
     position: relative;
     width: 550px;
     height: 160px;
-    margin-left: 332px;
+    margin: auto;
     top: 80px;
     background-color: rgb(230, 230, 230);
     
@@ -803,7 +805,7 @@ body{
     color: rgb(122, 121, 116);
 }
 .tContent{
-    width: 450px;
+    width: 46%;
 }
 
 .tContentRight{
@@ -849,6 +851,7 @@ body{
 #trackBuyButton:hover{
     background-color: rgb(189, 166, 116);
     color:rgb(238, 238, 238);
+    cursor: pointer;
 }
 
 /*Contato*/
@@ -861,7 +864,7 @@ body{
     border-radius: 8px;
     width: 70px;
     height: 70px;
-    margin-left: 200px;
+    margin-left: 18%;
     padding-left: 8px;
     padding-top: 5px;
     background-color: rgb(46, 46, 46);
@@ -945,7 +948,7 @@ body{
 }
 
 .contato h1{
-    margin-left: 500px;
+    margin-left: 40%;
     font-size: 75px;
     margin-top: 30px;
 }
@@ -1070,4 +1073,75 @@ body{
 
 .container2{
     background-color: rgb(235, 224, 213);
+}
+
+
+/*Carrinho*/
+
+.cart{
+    display: inline-block;
+}
+
+#dpCnt {
+    position: absolute;
+    background-color: #1d1d1d;
+    border: solid 2px #807a62;
+    width : 355px;
+    min-height: 100px;
+    margin-top: 10px;
+    margin-left: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    pointer-events: none;
+    z-index: 2;
+}
+
+#dpCnt.fade {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.dropdown-content a {
+    color: rgb(201, 201, 201);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    transition: 0.5s;
+}
+
+.dropdown-content a:hover {
+    color: white;
+}
+
+.cartTrack{
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+#meuCarrinho{
+    display: inline-block;
+    font-size: 20px;
+    color: rgb(218, 218, 218);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#cartTrackName{
+    display: inline-block;
+    position: relative;
+    top: -25px;
+    color: rgb(190, 190, 190);
+    margin-left: 8px;
+}
+
+#cartTrackPrice{
+    display: inline-block;
+    float: right;
+    color: rgb(190, 190, 190);
+    position: relative;
+    left: -25px;
+    top: 10px;
 }

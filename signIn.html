@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
-    
+    <script src="js/genCart.js"></script>
 </head>
 
 <body>
@@ -20,18 +20,26 @@
             <div class="opClass">
                 <a class="options" href= "tracks.html">Tracks</a>        
                 <a class="options" href= "contato.html">Contato</a>
-                <a class="options" href= "sobre.html">Sobre</a>
-                <a class="headIcon" href= ""><i class="fas fa-shopping-cart fa-lg">  $</i><span> 00,00</span></a>
+                
+                <div class="cart">
+                    <a class="headIcon"  onclick="showL()"><i class="fas fa-shopping-cart fa-lg">  $</i><span> 00,00</span></a>
+
+                    <div id="dpCnt" class="dropdown-content">
+                        <span id="meuCarrinho">Meu Carrinho</span>
+                        
+                    </div>
+                </div>
                 <a class="headIcon" href="login.html"><i class="far fa-user fa-lg"></i> Login</a>
+                
             </div>
         </div>
-        
     </div>
     <div class="container2">
         <div class="loginLeft">
             <div class="loginDiv">
                 <h1>Cadastrar-se</h1><br>
                 <div class="loginContent">
+                    <div id="error">Dados devem ser maiores que 4 caracteres</div>
                     <span class="userPass" id="user">Usuário</span><br>
                     <input type="text" id="userInp" name="user" placeholder="Digite seu nome de usuário"
                         autocomplete="off" /><br>

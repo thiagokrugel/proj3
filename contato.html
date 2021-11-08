@@ -7,6 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <script src="js/genCart.js"></script>
     </head>
 
     <body>
@@ -16,20 +17,27 @@
                 <div class="opClass">
                     <a class="options" href= "tracks.html">Tracks</a>        
                     <a class="options" href= "contato.html">Contato</a>
-                    <a class="options" href= "sobre.html">Sobre</a>
-                    <a class="headIcon" href= ""><i class="fas fa-shopping-cart fa-lg">  $</i><span> 00,00</span></a>
+                    
+                    <div class="cart">
+                        <a class="headIcon"  onclick="showL()"><i class="fas fa-shopping-cart fa-lg">  $</i><span> 00,00</span></a>
+
+                        <div id="dpCnt" class="dropdown-content">
+                            <span id="meuCarrinho">Meu Carrinho</span>
+                            
+                        </div>
+                    </div>
                     <a class="headIcon" href="login.html"><i class="far fa-user fa-lg"></i> Login</a>
+                    
                 </div>
             </div>
-            
         </div>
         <div class="contato">
             <h1>Contato</h1>
             <div class="botao">
-                <a href="https://www.instagram.com/luiggi.beats" id="instaIcon"><i class="fab fa-instagram fa-2x"></i></a>
-                <a href="https://www.beatstars.com/luiggibeats/tracks" id="beatsIcon"><img id="beatstars" src="assets\images\beatstars.png" /></a>
-                <a href="https://soundcloud.com/luiggi_beats" id="soundIcon"><i class="fab fa-soundcloud"></i></a>
-                <a href="https://www.youtube.com/channel/UCP1Wq6FCg3rcg7-XPCTEjDQ" id="youtubeIcon"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/luiggi.beats" target="_blank" id="instaIcon"><i class="fab fa-instagram fa-2x"></i></a>
+                <a href="https://www.beatstars.com/luiggibeats/tracks" target="_blank" id="beatsIcon"><img id="beatstars" src="assets\images\beatstars.png" /></a>
+                <a href="https://soundcloud.com/luiggi_beats" target="_blank" id="soundIcon"><i class="fab fa-soundcloud"></i></a>
+                <a href="https://www.youtube.com/channel/UCP1Wq6FCg3rcg7-XPCTEjDQ" target="_blank" id="youtubeIcon"><i class="fab fa-youtube"></i></a>
             </div>
         </div>
         <div class="footer">

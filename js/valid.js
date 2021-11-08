@@ -59,7 +59,7 @@ function validate() {
     else if (user.value.length >= 5 && password.value.length >= 5) {
         for(var i = 0; i < st.length; i++){
             if(user.value == st[i][0] && password.value == st[i][1]){
-                alert("Vai toma no cu");
+                window.location.replace("index.html");
                 return true; 
             }
         }
@@ -74,12 +74,31 @@ function register() {
 
     var user = document.getElementById("userInp");
     var password = document.getElementById("passInp");
+    const stUsers = localStorage.getItem('users');
+
+    if (user.value.length < 5 || password.value.length < 5) {
+        jsTransitionScale(er, 200, 78, 8, 30);
+        return false;
+    }
+
+    if(stUsers){
+        saveToStorage([user.value,password.value]);
+    }
+    else{
+        users.push([user.value,password.value]);
+        window.localStorage.setItem("users", JSON.stringify(users));
+    }
+
+    window.location.replace("login.html");
+}
 
 
-    users.push([user.value,password.value]);
-    alert(users);
+function saveToStorage(data)
+{
+    var a = [];
+    a = JSON.parse(localStorage.getItem('users')) || [];
+    a.push(data);
 
-    window.localStorage.setItem("users", JSON.stringify(users));
-
-    window.location.replace("index.html");
+    //alert(a);  
+    localStorage.setItem('users', JSON.stringify(a));
 }
